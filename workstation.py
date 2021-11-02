@@ -11,6 +11,7 @@ class Workstation:
             workers to operate
         """
         self.persons = 0 # persons necessary to operate workstation
+        self.schedule = list() # list of scheduled working hours (timespans)
 
     def getNeededPersonsForMachines(self):
         persons = 0
