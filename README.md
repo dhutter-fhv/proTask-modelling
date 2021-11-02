@@ -1,7 +1,7 @@
 # proTask-modelling
 Notes:
 + keine alternativen arbeitsplätze berücksichtigt
-+ keine qualifikation bei personen berücksichtigt
++ keine qualifikation bei personen berücksichtigt (Klasse Person wird noch nirgends verwendet)
 + personen - kann es arbeitsstationen geben bei denen keine maschine verwendet wird, aber personen nötig sind? -> könnte redundate daten zu personen auflösen
 + activity -> wenn eine activity immer eine fixe zeiteinheit hat, die nötig ist, kann das redundante speichern von timesteps in workplan entfernt werden, alternativ können timesteps für die sequenz verwendet werden, um parallele vorgänge zu ermöglichen
 + falls eine activity atomar genug ist um immer auf einem einzigen Arbeitsplatz durchgeführt zu werden, kann die Liste von arbeitsplätzen in Activity für alternative Arbeitsplätze verwendet werden
