@@ -7,7 +7,7 @@ class Material:
         self.id = 0
         self.name = ""
         self.minAmount = 0 # Losgröße
-        self.versions = list() # list of alternative recipes
+        self.versions = list() # list of alternative recipes - base material if list is empty
         self.subMaterials = list() # list of materials necessary to make this material - base material if list is empty
 
     def getBaseMaterials(self) -> list:
