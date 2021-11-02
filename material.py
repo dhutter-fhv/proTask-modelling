@@ -8,6 +8,8 @@ class Material:
         self.name = ""
         self.minAmount = 0 # Losgröße
         self.versions = list() # list of alternative recipes - base material if list is empty
+"""
+# this should probably be done in recipe
         self.subMaterials = list() # list of materials necessary to make this material - base material if list is empty
 
     def getBaseMaterials(self) -> list:
@@ -21,3 +23,4 @@ class Material:
         else:
             materials.append(self)
         return materials
+"""
