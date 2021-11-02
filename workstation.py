@@ -13,7 +13,7 @@ class Workstation:
         self.persons = 0 # persons necessary to operate workstation
         self.schedule = list() # list of scheduled working hours (timespans)
 
-    def getNeededPersonsForMachines(self):
+    def getNeededPersonsForMachines(self) -> int:
         persons = 0
         for machine in self.machines:
             persons += machine.personsNeeded

@@ -14,7 +14,7 @@ class Material:
         materials = list()
         if (len(self.subMaterials)) > 0:
             for material in self.subMaterials:
-                sub = material.getBaseMaterials()
+                sub : list = material.getBaseMaterials()
                 for s in sub: # this is just to make sure each base material only appears once in the list
                     if s not in materials:
                         materials.append(s) 
