@@ -6,5 +6,5 @@ Notes:
 + activity -> wenn eine activity immer eine fixe zeiteinheit hat, die nötig ist, kann das redundante speichern von timesteps in workplan entfernt werden, alternativ können timesteps für die sequenz verwendet werden, um parallele vorgänge zu ermöglichen
 + falls eine activity atomar genug ist um immer auf einem einzigen Arbeitsplatz durchgeführt zu werden, kann die Liste von arbeitsplätzen in Activity für alternative Arbeitsplätze verwendet werden
 + methoden/funktionen sind im Digramm noch ausgenommen, bisher nur beispielhafte methoden wie in Recipe um den Abstieg durch alle Materialien zu demonstrieren
-
++ information über ergebnis material ist in rezept an sich redundant
 ![alt text](https://github.com/dhutter-fhv/proTask-modelling/blob/master/UML.png?raw=true)
