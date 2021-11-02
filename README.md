@@ -8,5 +8,5 @@ Notes:
 + methoden/funktionen sind im Digramm noch ausgenommen, bisher nur beispielhafte methoden wie in Recipe um den Abstieg durch alle Materialien zu demonstrieren
 + information über ergebnis material ist in rezept an sich redundant
 + Im Moment ist ein Material mit den Submaterialien in Material selbst abgebildet,
-das sollte möglicherweise geändert werden wenn das Material alternativ aus anderen  Materialien hergestellt werden kann -> gleiche funktionalität könnte auch über alternative rezepte erreicht werden
+das sollte möglicherweise geändert werden wenn das Material alternativ aus anderen  Materialien hergestellt werden kann -> gleiche funktionalität könnte auch über alternative rezepte erreicht werden (kann vereinfacht werden falls es ein "Default" Rezept für jedes material gibt)
 ![alt text](https://github.com/dhutter-fhv/proTask-modelling/blob/master/UML.png?raw=true)
