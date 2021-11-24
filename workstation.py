@@ -1,20 +1,25 @@
 from machine import Machine
-
+from resourcepool import ResourcePool
 class Workstation:
 
     def __init__(self):
+        self.id = ''
         self.preparationTime = 0 # time needed for the workstation to be ready
-        self.machines = list() # list of machines attached to the workstation
-        """
-            the person count in the class persons is only necessary if
-            there are workstations with no machine which need human
-            workers to operate
-        """
-        self.persons = 0 # persons necessary to operate workstation
-        self.schedule = list() # list of scheduled working hours (timespans)
+        self.dismantleTime = 0 # time needed after the work is done
 
-    def getNeededPersonsForMachines(self) -> int:
-        persons = 0
-        for machine in self.machines:
-            persons += machine.personsNeeded
-        return persons
+        self.resources = list() # list of tuple: resource pools and lists of resources
+        self.schedule = None # schedule of the workstation
+
+    def get_needed_resources(self):
+        possible_resources = list()
+        for pool in self.resources:
+            for needed_resource in pool[1]:
+                found = False
+                for available_resource in pool[0].get_resources():
+                    if needed_resource == available_resource:
+                        found = True
+                        possible_resources.append(available_resource)
+                        break
+                if not found:
+                    return None # return none if a resource is not available
+        return possible_resources
